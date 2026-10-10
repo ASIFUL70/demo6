@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Achievements & Experience | Sarah Jenkins, M.Ed.</title>
+  <meta name="description" content="View Sarah Jenkins' professional teaching experience timeline, National Board credentials, STEM awards, and verified certificate gallery.">
+  <link rel="canonical" href="https://sarahjenkins-teacher.example.com/achievements.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sarahjenkins-teacher.example.com/achievements.html">
+  <meta property="og:title" content="Achievements & Experience | Sarah Jenkins, M.Ed.">
+  <meta property="og:description" content="View professional teaching experience timeline, National Board credentials, STEM awards, and certificate gallery.">
+  <meta property="og:image" content="assets/images/og-image.svg">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: { 800: '#1e293b', 900: '#0f172a', 950: '#020617' },
+            royal: { 600: '#2563eb', 700: '#1d4ed8', 800: '#1e40af' }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased flex flex-col min-h-screen">
+
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-blue-900 text-white px-4 py-2 rounded-md z-50 shadow-lg">
+    Skip to main content
+  </a>
+
+  <!-- NAVIGATION HEADER -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-slate-200 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-20 items-center">
+        <a href="index.html" class="flex items-center space-x-3 group focus:outline-none focus:ring-2 focus:ring-blue-800 rounded-lg p-1">
+          <div class="w-10 h-10 rounded-lg bg-blue-900 text-white flex items-center font-bold text-xl justify-center shadow-md group-hover:bg-blue-800 transition-colors">
+            SJ
+          </div>
+          <div>
+            <span class="block text-lg font-bold text-slate-900 leading-tight group-hover:text-blue-900 transition-colors" data-config="fullName">Sarah Jenkins, M.Ed.</span>
+            <span class="block text-xs font-medium text-slate-500" data-config="title">Senior STEM Educator</span>
+          </div>
+        </a>
+
+        <nav class="hidden md:flex space-x-1 lg:space-x-2" aria-label="Main Navigation">
+          <a href="index.html" class="nav-link px-3 py-2 text-sm font-semibold text-slate-600 hover:text-blue-900 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-800 rounded-t">Home</a>
+          <a href="about.html" class="nav-link px-3 py-2 text-sm font-semibold text-slate-600 hover:text-blue-900 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-800 rounded-t">About Me</a>
+          <a href="teaching.html" class="nav-link px-3 py-2 text-sm font-semibold text-slate-600 hover:text-blue-900 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-800 rounded-t">Teaching & Subjects</a>
+          <a href="resources.html" class="nav-link px-3 py-2 text-sm font-semibold text-slate-600 hover:text-blue-900 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-800 rounded-t">Resources</a>
+          <a href="achievements.html" class="nav-link px-3 py-2 text-sm font-semibold text-blue-900 border-b-2 border-blue-900 focus:outline-none focus:ring-2 focus:ring-blue-800 rounded-t">Achievements</a>
+          <a href="contact.html" class="nav-link px-3 py-2 text-sm font-semibold text-slate-600 hover:text-blue-900 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-800 rounded-t">Contact</a>
+        </nav>
+
+        <div class="hidden lg:flex items-center">
+          <a href="assets/documents/teaching-certificate-sample.pdf" download class="inline-flex items-center justify-center px-4 py-2 border border-slate-300 text-sm font-semibold rounded-lg text-slate-700 bg-white hover:bg-slate-50 shadow-sm transition-all focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-800" data-config="assets.teachingCertificate">
+            <svg class="w-4 h-4 mr-1.5 text-blue-800" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            Verify Credential (PDF)
+          </a>
+        </div>
+
+        <button type="button" id="mobile-menu-toggle" class="md:hidden p-2 rounded-lg text-slate-600 hover:text-slate-900 hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-blue-800" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle Navigation Menu">
+          <svg id="menu-icon-svg" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="hidden md:hidden border-b border-slate-200 bg-white px-4 pt-2 pb-6 space-y-2">
+      <a href="index.html" class="block px-3 py-2.5 rounded-md text-base font-medium text-slate-700 hover:bg-slate-100">Home</a>
+      <a href="about.html" class="block px-3 py-2.5 rounded-md text-base font-medium text-slate-700 hover:bg-slate-100">About Me</a>
+      <a href="teaching.html" class="block px-3 py-2.5 rounded-md text-base font-medium text-slate-700 hover:bg-slate-100">Teaching & Subjects</a>
+      <a href="resources.html" class="block px-3 py-2.5 rounded-md text-base font-medium text-slate-700 hover:bg-slate-100">Resources</a>
+      <a href="achievements.html" class="block px-3 py-2.5 rounded-md text-base font-medium text-blue-900 bg-blue-50">Achievements</a>
+      <a href="contact.html" class="block px-3 py-2.5 rounded-md text-base font-medium text-slate-700 hover:bg-slate-100">Contact</a>
+    </div>
+  </header>
+
+  <main id="main-content" class="flex-grow">
+
+    <!-- PAGE HERO HEADER -->
+    <section class="bg-slate-900 text-white py-14 border-b border-slate-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl space-y-3">
+          <span class="text-blue-400 text-xs font-bold uppercase tracking-wider">Professional Recognition</span>
+          <h1 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+            Achievements & Professional Highlights
+          </h1>
+          <p class="text-slate-300 text-base sm:text-lg leading-relaxed font-light">
+            Verified certifications, teaching awards, professional development workshops, and academic accomplishments over 10+ years in education.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATE & CREDENTIAL GALLERY WITH INTERACTIVE MODAL -->
+    <section class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto space-y-3 mb-12">
+          <span class="text-blue-800 text-sm font-bold tracking-wider uppercase">Visual Verification</span>
+          <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight">Certificate & Credential Gallery</h2>
+          <p class="text-slate-600">
+            Click on any credential image to enlarge and preview details.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+          <!-- Cert 1 -->
+          <div class="bg-slate-50 rounded-xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow group">
+            <div class="relative overflow-hidden cursor-pointer open-cert-modal" data-cert-src="assets/images/cert-national-board.svg" data-cert-title="National Board Certification - Secondary Science">
+              <img src="assets/images/cert-national-board.svg" alt="National Board Certification thumbnail" class="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-300">
+              <div class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-xs font-bold space-x-1">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+                <span>Click to Expand</span>
+              </div>
+            </div>
+            <div class="p-5 space-y-2">
+              <span class="text-[10px] font-bold uppercase tracking-wider bg-blue-100 text-blue-900 px-2 py-0.5 rounded">National Credential</span>
+              <h3 class="font-bold text-slate-900 text-base">National Board Certification</h3>
+              <p class="text-xs text-slate-500">Issued by NBPTS • EA / Science Specialization</p>
+            </div>
+          </div>
+
+          <!-- Cert 2 -->
+          <div class="bg-slate-50 rounded-xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow group">
+            <div class="relative overflow-hidden cursor-pointer open-cert-modal" data-cert-src="assets/images/cert-stem-excellence.svg" data-cert-title="Regional STEM Educator Excellence Award">
+              <img src="assets/images/cert-stem-excellence.svg" alt="STEM Leadership Award thumbnail" class="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-300">
+              <div class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-xs font-bold space-x-1">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+                <span>Click to Expand</span>
+              </div>
+            </div>
+            <div class="p-5 space-y-2">
+              <span class="text-[10px] font-bold uppercase tracking-wider bg-blue-100 text-blue-900 px-2 py-0.5 rounded">Teaching Award</span>
+              <h3 class="font-bold text-slate-900 text-base">STEM Educator Excellence Award</h3>
+              <p class="text-xs text-slate-500">Awarded by Washington Science Teachers Association (2022)</p>
+            </div>
+          </div>
+
+          <!-- Cert 3 -->
+          <div class="bg-slate-50 rounded-xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow group">
+            <div class="relative overflow-hidden cursor-pointer open-cert-modal" data-cert-src="assets/images/cert-masters-degree.svg" data-cert-title="Master of Education - University of Washington">
+              <img src="assets/images/cert-masters-degree.svg" alt="Master Degree Certificate thumbnail" class="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-300">
+              <div class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-xs font-bold space-x-1">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+                <span>Click to Expand</span>
+              </div>
+            </div>
+            <div class="p-5 space-y-2">
+              <span class="text-[10px] font-bold uppercase tracking-wider bg-blue-100 text-blue-900 px-2 py-0.5 rounded">Academic Degree</span>
+              <h3 class="font-bold text-slate-900 text-base">Master of Education (M.Ed.)</h3>
+              <p class="text-xs text-slate-500">University of Washington • Science Education Focus</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- WORKSHOPS & PROFESSIONAL DEVELOPMENT -->
+    <section class="py-16 bg-slate-100/70 border-y border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto space-y-3 mb-12">
+          <span class="text-blue-800 text-sm font-bold tracking-wider uppercase">Continuous Learning</span>
+          <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight">Workshops & Professional Training</h2>
+          <p class="text-slate-600">
+            Active engagement in modern pedagogical research and STEM instruction methodologies.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+          <div class="p-6 rounded-xl bg-white border border-slate-200 space-y-3">
+            <span class="text-xs font-semibold px-2 py-0.5 rounded bg-blue-50 text-blue-900">College Board Workshop • 2023</span>
+            <h3 class="font-bold text-slate-900 text-lg">AP Physics 1 Summer Instructional Institute</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              30-hour intensive workshop covering updated AP exam scoring rubrics, inquiry-based lab setup, and conceptual quantitative reasoning strategies.
+            </p>
+          </div>
+
+          <div class="p-6 rounded-xl bg-white border border-slate-200 space-y-3">
+            <span class="text-xs font-semibold px-2 py-0.5 rounded bg-blue-50 text-blue-900">NSTA Conference • 2022</span>
+            <h3 class="font-bold text-slate-900 text-lg">Differentiated Instruction in High School Physics</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              National Science Teaching Association presentation on implementing visual scaffolds for English Language Learners in physics lab environments.
+            </p>
+          </div>
+
+          <div class="p-6 rounded-xl bg-white border border-slate-200 space-y-3">
+            <span class="text-xs font-semibold px-2 py-0.5 rounded bg-blue-50 text-blue-900">UW Pedagogy Seminar • 2021</span>
+            <h3 class="font-bold text-slate-900 text-lg">Restorative Classroom Culture & Equitable Grading</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Seminar on standards-based grading models that reduce test anxiety and incentivize persistent revision and mastery.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CALL TO ACTION -->
+    <section class="py-16 bg-slate-900 text-white text-center">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+        <h2 class="text-3xl font-extrabold tracking-tight">Interested in Requesting Verification Documents?</h2>
+        <p class="text-slate-300 max-w-2xl mx-auto leading-relaxed">
+          Official academic transcripts, teaching credentials, and letters of recommendation are available upon request.
+        </p>
+        <div class="pt-2 flex justify-center space-x-4">
+          <a href="contact.html" class="px-6 py-3.5 bg-blue-600 hover:bg-blue-500 text-white font-bold rounded-lg shadow-lg transition-colors">
+            Contact Educator
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- MODAL FOR CERTIFICATE ZOOM -->
+  <div id="cert-modal" class="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm hidden items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-3xl w-full border border-slate-200 shadow-2xl overflow-hidden relative">
+      <div class="p-4 border-b border-slate-200 flex justify-between items-center bg-slate-50">
+        <h3 id="cert-modal-title" class="font-bold text-slate-900 text-base">Credential Detail</h3>
+        <button id="cert-modal-close" type="button" class="p-1 rounded-lg text-slate-500 hover:bg-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-800" aria-label="Close image popup modal">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+      <div class="p-6 flex justify-center bg-slate-100">
+        <img id="cert-modal-img" src="" alt="Enlarged credential image preview" class="max-h-[70vh] w-auto object-contain rounded-lg shadow">
+      </div>
+    </div>
+  </div>
+
+  <!-- BACK TO TOP BUTTON -->
+  <button id="back-to-top" type="button" class="fixed bottom-6 right-6 p-3 rounded-full bg-blue-900 text-white shadow-xl hover:bg-blue-800 transition-all hidden opacity-0 z-50 focus:outline-none focus:ring-2 focus:ring-blue-600" aria-label="Back to top of page">
+    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>
+  </button>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-900 text-slate-300 border-t border-slate-800 pt-12 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-12 border-b border-slate-800">
+
+        <div class="space-y-3 md:col-span-1">
+          <span class="text-xl font-bold text-white block" data-config="fullName">Sarah Jenkins, M.Ed.</span>
+          <p class="text-xs text-slate-400 leading-relaxed" data-config="title">Senior High School Mathematics & Physics Educator</p>
+          <p class="text-xs text-slate-400" data-config="school">Oakridge High School • Seattle, WA</p>
+        </div>
+
+        <div>
+          <p class="text-xs font-bold text-white uppercase tracking-wider mb-4">Site Navigation</p>
+          <ul class="space-y-2 text-sm">
+            <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+            <li><a href="about.html" class="hover:text-white transition-colors">About Me</a></li>
+            <li><a href="teaching.html" class="hover:text-white transition-colors">Teaching & Subjects</a></li>
+            <li><a href="resources.html" class="hover:text-white transition-colors">Learning Resources</a></li>
+            <li><a href="achievements.html" class="hover:text-white transition-colors">Achievements</a></li>
+            <li><a href="contact.html" class="hover:text-white transition-colors">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="text-xs font-bold text-white uppercase tracking-wider mb-4">Direct Contact</p>
+          <ul class="space-y-2 text-sm text-slate-400">
+            <li>Email: <a href="mailto:sarah.jenkins.educator@example.com" class="text-slate-300 hover:text-white underline" data-config="contact.email">sarah.jenkins.educator@example.com</a></li>
+            <li>Phone: <span data-config="contact.phone">+1 (206) 555-0192</span></li>
+            <li>Workplace: <span data-config="contact.workplace">Oakridge High School</span></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="text-xs font-bold text-white uppercase tracking-wider mb-4">Professional Connect</p>
+          <div class="flex space-x-3">
+            <a href="https://www.linkedin.com/in/example-teacher-profile" target="_blank" rel="noopener noreferrer" class="p-2 rounded-lg bg-slate-800 text-slate-300 hover:text-white hover:bg-slate-700 transition-colors" aria-label="LinkedIn Profile" data-config="social.linkedin">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.75a1.62 1.62 0 1 0 0 3.24 1.62 1.62 0 0 0 0-3.24z"/></svg>
+            </a>
+            <a href="https://twitter.com/example_edu" target="_blank" rel="noopener noreferrer" class="p-2 rounded-lg bg-slate-800 text-slate-300 hover:text-white hover:bg-slate-700 transition-colors" aria-label="Twitter Profile" data-config="social.twitter">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.05c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.58 8.58 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-8 text-center text-xs text-slate-500">
+        <p>&copy; <span id="current-year">2025</span> <span data-config="fullName">Sarah Jenkins</span>. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

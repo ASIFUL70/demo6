@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sarahjenkins-teacher.example.com/sitemap.xml

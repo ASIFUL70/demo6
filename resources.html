@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning Resources | Sarah Jenkins, M.Ed.</title>
+  <meta name="description" content="Download free high school STEM teaching resources, physics lab guides, algebra worksheets, AP calculus study notes, and revision quizzes by Sarah Jenkins.">
+  <link rel="canonical" href="https://sarahjenkins-teacher.example.com/resources.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sarahjenkins-teacher.example.com/resources.html">
+  <meta property="og:title" content="Learning Resources | Sarah Jenkins, M.Ed.">
+  <meta property="og:description" content="Download free high school STEM teaching resources, physics lab guides, algebra worksheets, AP calculus study notes, and revision quizzes.">
+  <meta property="og:image" content="assets/images/og-image.svg">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: { 800: '#1e293b', 900: '#0f172a', 950: '#020617' },
+            royal: { 600: '#2563eb', 700: '#1d4ed8', 800: '#1e40af' }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased flex flex-col min-h-screen">
+
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-blue-900 text-white px-4 py-2 rounded-md z-50 shadow-lg">
+    Skip to main content
+  </a>
+
+  <!-- NAVIGATION HEADER -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-slate-200 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-20 items-center">
+        <a href="index.html" class="flex items-center space-x-3 group focus:outline-none focus:ring-2 focus:ring-blue-800 rounded-lg p-1">
+          <div class="w-10 h-10 rounded-lg bg-blue-900 text-white flex items-center font-bold text-xl justify-center shadow-md group-hover:bg-blue-800 transition-colors">
+            SJ
+          </div>
+          <div>
+            <span class="block text-lg font-bold text-slate-900 leading-tight group-hover:text-blue-900 transition-colors" data-config="fullName">Sarah Jenkins, M.Ed.</span>
+            <span class="block text-xs font-medium text-slate-500" data-config="title">Senior STEM Educator</span>
+          </div>
+        </a>
+
+        <nav class="hidden md:flex space-x-1 lg:space-x-2" aria-label="Main Navigation">
+          <a href="index.html" class="nav-link px-3 py-2 text-sm font-semibold text-slate-600 hover:text-blue-900 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-800 rounded-t">Home</a>
+          <a href="about.html" class="nav-link px-3 py-2 text-sm font-semibold text-slate-600 hover:text-blue-900 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-800 rounded-t">About Me</a>
+          <a href="teaching.html" class="nav-link px-3 py-2 text-sm font-semibold text-slate-600 hover:text-blue-900 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-800 rounded-t">Teaching & Subjects</a>
+          <a href="resources.html" class="nav-link px-3 py-2 text-sm font-semibold text-blue-900 border-b-2 border-blue-900 focus:outline-none focus:ring-2 focus:ring-blue-800 rounded-t">Resources</a>
+          <a href="achievements.html" class="nav-link px-3 py-2 text-sm font-semibold text-slate-600 hover:text-blue-900 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-800 rounded-t">Achievements</a>
+          <a href="contact.html" class="nav-link px-3 py-2 text-sm font-semibold text-slate-600 hover:text-blue-900 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-800 rounded-t">Contact</a>
+        </nav>
+
+        <div class="hidden lg:flex items-center">
+          <a href="contact.html" class="inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-semibold rounded-lg text-white bg-blue-900 hover:bg-blue-800 shadow-sm transition-all focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-800">
+            Request Custom Material
+          </a>
+        </div>
+
+        <button type="button" id="mobile-menu-toggle" class="md:hidden p-2 rounded-lg text-slate-600 hover:text-slate-900 hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-blue-800" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle Navigation Menu">
+          <svg id="menu-icon-svg" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="hidden md:hidden border-b border-slate-200 bg-white px-4 pt-2 pb-6 space-y-2">
+      <a href="index.html" class="block px-3 py-2.5 rounded-md text-base font-medium text-slate-700 hover:bg-slate-100">Home</a>
+      <a href="about.html" class="block px-3 py-2.5 rounded-md text-base font-medium text-slate-700 hover:bg-slate-100">About Me</a>
+      <a href="teaching.html" class="block px-3 py-2.5 rounded-md text-base font-medium text-slate-700 hover:bg-slate-100">Teaching & Subjects</a>
+      <a href="resources.html" class="block px-3 py-2.5 rounded-md text-base font-medium text-blue-900 bg-blue-50">Resources</a>
+      <a href="achievements.html" class="block px-3 py-2.5 rounded-md text-base font-medium text-slate-700 hover:bg-slate-100">Achievements</a>
+      <a href="contact.html" class="block px-3 py-2.5 rounded-md text-base font-medium text-slate-700 hover:bg-slate-100">Contact</a>
+    </div>
+  </header>
+
+  <main id="main-content" class="flex-grow">
+
+    <!-- PAGE HERO HEADER -->
+    <section class="bg-slate-900 text-white py-14 border-b border-slate-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl space-y-3">
+          <span class="text-blue-400 text-xs font-bold uppercase tracking-wider">Educational Assets</span>
+          <h1 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+            Learning Resources & Curriculum Library
+          </h1>
+          <p class="text-slate-300 text-base sm:text-lg leading-relaxed font-light">
+            Searchable repository of open-access worksheets, inquiry lesson plans, AP physics study guides, and review quizzes created for secondary STEM education.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEARCH & CATEGORY FILTERING SECTION -->
+    <section class="py-12 bg-white border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+
+        <div class="flex flex-col md:flex-row gap-4 justify-between items-center">
+
+          <!-- Search Bar Input -->
+          <div class="relative w-full md:w-96">
+            <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+            </div>
+            <input type="text" id="resource-search" placeholder="Search by topic, keyword, or subject..." class="w-full pl-10 pr-4 py-2.5 border border-slate-300 rounded-lg text-sm text-slate-800 bg-slate-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-blue-800 focus:border-transparent transition-all" aria-label="Search learning resources">
+          </div>
+
+          <!-- Category Filter Buttons -->
+          <div class="flex flex-wrap gap-2 w-full md:w-auto" role="group" aria-label="Filter resources by type">
+            <button type="button" class="filter-btn bg-blue-900 text-white shadow px-3.5 py-2 rounded-lg text-xs font-bold transition-colors focus:outline-none focus:ring-2 focus:ring-blue-800" data-filter="all" aria-pressed="true">
+              All Resources
+            </button>
+            <button type="button" class="filter-btn bg-slate-100 text-slate-700 hover:bg-slate-200 px-3.5 py-2 rounded-lg text-xs font-bold transition-colors focus:outline-none focus:ring-2 focus:ring-blue-800" data-filter="worksheet" aria-pressed="false">
+              Worksheets
+            </button>
+            <button type="button" class="filter-btn bg-slate-100 text-slate-700 hover:bg-slate-200 px-3.5 py-2 rounded-lg text-xs font-bold transition-colors focus:outline-none focus:ring-2 focus:ring-blue-800" data-filter="lesson-plan" aria-pressed="false">
+              Lesson Plans
+            </button>
+            <button type="button" class="filter-btn bg-slate-100 text-slate-700 hover:bg-slate-200 px-3.5 py-2 rounded-lg text-xs font-bold transition-colors focus:outline-none focus:ring-2 focus:ring-blue-800" data-filter="study-guide" aria-pressed="false">
+              Study Guides
+            </button>
+            <button type="button" class="filter-btn bg-slate-100 text-slate-700 hover:bg-slate-200 px-3.5 py-2 rounded-lg text-xs font-bold transition-colors focus:outline-none focus:ring-2 focus:ring-blue-800" data-filter="revision" aria-pressed="false">
+              Revision Quizzes
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- RESOURCE CARDS GRID -->
+    <section class="py-12 bg-slate-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Empty State Container -->
+        <div id="resource-empty-state" class="hidden text-center py-16 bg-white rounded-2xl border border-slate-200 p-8 max-w-lg mx-auto space-y-3">
+          <div class="w-12 h-12 rounded-full bg-slate-100 text-slate-400 flex items-center justify-center mx-auto">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h3 class="font-bold text-slate-900 text-lg">No Matching Resources Found</h3>
+          <p class="text-xs text-slate-500">
+            We couldn't find any resources matching your search or category filter. Try clearing your search term or selecting a different category.
+          </p>
+        </div>
+
+        <!-- Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+          <!-- Card 1 -->
+          <div class="resource-card bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between" data-category="worksheet">
+            <div>
+              <div class="relative bg-slate-100 border-b border-slate-200 overflow-hidden">
+                <img src="assets/images/resource-thumb-1.svg" alt="Algebra II Quadratic Functions Worksheet thumbnail" class="w-full h-40 object-cover">
+                <span class="absolute top-3 left-3 bg-blue-900 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">
+                  Worksheet
+                </span>
+              </div>
+              <div class="p-6 space-y-2">
+                <p class="resource-subject text-xs font-semibold text-blue-800">Mathematics • Grades 9–10</p>
+                <h3 class="resource-title text-lg font-bold text-slate-900 leading-snug">Algebra II: Quadratic Functions Practice</h3>
+                <p class="resource-desc text-xs text-slate-600 leading-relaxed">
+                  Comprehensive problem set covering factoring, vertex form conversion, quadratic formula, and projectile motion word problems with answer keys.
+                </p>
+              </div>
+            </div>
+            <div class="px-6 py-4 bg-slate-50 border-t border-slate-100 flex items-center justify-between text-xs">
+              <span class="text-slate-500 font-medium">PDF • 1.2 MB</span>
+              <a href="assets/documents/algebra-worksheet.pdf" download class="inline-flex items-center font-bold text-blue-900 hover:text-blue-700">
+                <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+                Download
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="resource-card bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between" data-category="lesson-plan">
+            <div>
+              <div class="relative bg-slate-100 border-b border-slate-200 overflow-hidden">
+                <img src="assets/images/resource-thumb-2.svg" alt="AP Physics 1 Newton Laws Lesson Plan thumbnail" class="w-full h-40 object-cover">
+                <span class="absolute top-3 left-3 bg-blue-900 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">
+                  Lesson Plan
+                </span>
+              </div>
+              <div class="p-6 space-y-2">
+                <p class="resource-subject text-xs font-semibold text-blue-800">Physics • Grades 11–12</p>
+                <h3 class="resource-title text-lg font-bold text-slate-900 leading-snug">AP Physics 1: Newton's Laws Guided Inquiry</h3>
+                <p class="resource-desc text-xs text-slate-600 leading-relaxed">
+                  5E model lesson plan featuring interactive lab investigation of friction, tension force vectors, and free-body diagram analysis.
+                </p>
+              </div>
+            </div>
+            <div class="px-6 py-4 bg-slate-50 border-t border-slate-100 flex items-center justify-between text-xs">
+              <span class="text-slate-500 font-medium">PDF • 850 KB</span>
+              <a href="assets/documents/physics-lesson-plan.pdf" download class="inline-flex items-center font-bold text-blue-900 hover:text-blue-700">
+                <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+                Download
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="resource-card bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between" data-category="study-guide">
+            <div>
+              <div class="relative bg-slate-100 border-b border-slate-200 overflow-hidden">
+                <img src="assets/images/resource-thumb-3.svg" alt="Chemistry & Chemical Bonding Study Guide thumbnail" class="w-full h-40 object-cover">
+                <span class="absolute top-3 left-3 bg-blue-900 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">
+                  Study Guide
+                </span>
+              </div>
+              <div class="p-6 space-y-2">
+                <p class="resource-subject text-xs font-semibold text-blue-800">Chemistry & Physics • Grades 10–12</p>
+                <h3 class="resource-title text-lg font-bold text-slate-900 leading-snug">Chemical Bonding & Molecular Geometry</h3>
+                <p class="resource-desc text-xs text-slate-600 leading-relaxed">
+                  Visual summary guide detailing molecular geometry, VSEPR theory, intermolecular forces, and lattice energy diagrams.
+                </p>
+              </div>
+            </div>
+            <div class="px-6 py-4 bg-slate-50 border-t border-slate-100 flex items-center justify-between text-xs">
+              <span class="text-slate-500 font-medium">PDF • 2.4 MB</span>
+              <a href="assets/documents/chemistry-study-guide.pdf" download class="inline-flex items-center font-bold text-blue-900 hover:text-blue-700">
+                <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+                Download
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="resource-card bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between" data-category="revision">
+            <div>
+              <div class="relative bg-slate-100 border-b border-slate-200 overflow-hidden">
+                <img src="assets/images/resource-thumb-4.svg" alt="Mathematics Mid-Term Revision Quiz thumbnail" class="w-full h-40 object-cover">
+                <span class="absolute top-3 left-3 bg-blue-900 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">
+                  Revision Quiz
+                </span>
+              </div>
+              <div class="p-6 space-y-2">
+                <p class="resource-subject text-xs font-semibold text-blue-800">Mathematics • Grades 10–11</p>
+                <h3 class="resource-title text-lg font-bold text-slate-900 leading-snug">Mid-Term Mathematics Revision Quiz</h3>
+                <p class="resource-desc text-xs text-slate-600 leading-relaxed">
+                  40-question review package with step-by-step answer key covering functions, sequences, and logarithmic equations.
+                </p>
+              </div>
+            </div>
+            <div class="px-6 py-4 bg-slate-50 border-t border-slate-100 flex items-center justify-between text-xs">
+              <span class="text-slate-500 font-medium">PDF • 1.8 MB</span>
+              <a href="assets/documents/math-revision-quiz.pdf" download class="inline-flex items-center font-bold text-blue-900 hover:text-blue-700">
+                <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+                Download
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Replacement Note Notice -->
+        <div class="mt-12 p-4 rounded-xl bg-blue-50 border border-blue-200 text-xs text-blue-900 flex items-start space-x-3">
+          <svg class="w-5 h-5 text-blue-700 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          <div>
+            <strong class="font-bold block mb-1">Customization Note for Website Administrators:</strong>
+            All PDF files included above are valid sample documents stored in <code class="bg-blue-100 px-1 py-0.5 rounded">assets/documents/</code>. To replace them with your own school worksheets or lesson plans, simply place your PDF files into the <code class="bg-blue-100 px-1 py-0.5 rounded">assets/documents/</code> folder and update <code class="bg-blue-100 px-1 py-0.5 rounded">js/config.js</code> or the HTML download links.
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CALL TO ACTION -->
+    <section class="py-16 bg-slate-900 text-white text-center">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+        <h2 class="text-3xl font-extrabold tracking-tight">Need Tailored STEM Resources for Your Department?</h2>
+        <p class="text-slate-300 max-w-2xl mx-auto leading-relaxed">
+          I am happy to collaborate with educators to share lesson plans, rubrics, and AP physics inquiry modules.
+        </p>
+        <div class="pt-2 flex justify-center space-x-4">
+          <a href="contact.html" class="px-6 py-3.5 bg-blue-600 hover:bg-blue-500 text-white font-bold rounded-lg shadow-lg transition-colors">
+            Get in Touch
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- BACK TO TOP BUTTON -->
+  <button id="back-to-top" type="button" class="fixed bottom-6 right-6 p-3 rounded-full bg-blue-900 text-white shadow-xl hover:bg-blue-800 transition-all hidden opacity-0 z-50 focus:outline-none focus:ring-2 focus:ring-blue-600" aria-label="Back to top of page">
+    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>
+  </button>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-900 text-slate-300 border-t border-slate-800 pt-12 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-12 border-b border-slate-800">
+
+        <div class="space-y-3 md:col-span-1">
+          <span class="text-xl font-bold text-white block" data-config="fullName">Sarah Jenkins, M.Ed.</span>
+          <p class="text-xs text-slate-400 leading-relaxed" data-config="title">Senior High School Mathematics & Physics Educator</p>
+          <p class="text-xs text-slate-400" data-config="school">Oakridge High School • Seattle, WA</p>
+        </div>
+
+        <div>
+          <p class="text-xs font-bold text-white uppercase tracking-wider mb-4">Site Navigation</p>
+          <ul class="space-y-2 text-sm">
+            <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+            <li><a href="about.html" class="hover:text-white transition-colors">About Me</a></li>
+            <li><a href="teaching.html" class="hover:text-white transition-colors">Teaching & Subjects</a></li>
+            <li><a href="resources.html" class="hover:text-white transition-colors">Learning Resources</a></li>
+            <li><a href="achievements.html" class="hover:text-white transition-colors">Achievements</a></li>
+            <li><a href="contact.html" class="hover:text-white transition-colors">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="text-xs font-bold text-white uppercase tracking-wider mb-4">Direct Contact</p>
+          <ul class="space-y-2 text-sm text-slate-400">
+            <li>Email: <a href="mailto:sarah.jenkins.educator@example.com" class="text-slate-300 hover:text-white underline" data-config="contact.email">sarah.jenkins.educator@example.com</a></li>
+            <li>Phone: <span data-config="contact.phone">+1 (206) 555-0192</span></li>
+            <li>Workplace: <span data-config="contact.workplace">Oakridge High School</span></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="text-xs font-bold text-white uppercase tracking-wider mb-4">Professional Connect</p>
+          <div class="flex space-x-3">
+            <a href="https://www.linkedin.com/in/example-teacher-profile" target="_blank" rel="noopener noreferrer" class="p-2 rounded-lg bg-slate-800 text-slate-300 hover:text-white hover:bg-slate-700 transition-colors" aria-label="LinkedIn Profile" data-config="social.linkedin">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.75a1.62 1.62 0 1 0 0 3.24 1.62 1.62 0 0 0 0-3.24z"/></svg>
+            </a>
+            <a href="https://twitter.com/example_edu" target="_blank" rel="noopener noreferrer" class="p-2 rounded-lg bg-slate-800 text-slate-300 hover:text-white hover:bg-slate-700 transition-colors" aria-label="Twitter Profile" data-config="social.twitter">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.05c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.58 8.58 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-8 text-center text-xs text-slate-500">
+        <p>&copy; <span id="current-year">2025</span> <span data-config="fullName">Sarah Jenkins</span>. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

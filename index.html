@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sarah Jenkins, M.Ed. | High School Mathematics & Physics Educator</title>
+  <meta name="description" content="Official portfolio of Sarah Jenkins, M.Ed. - Senior STEM Educator specializing in High School Mathematics, AP Physics, inquiry-based learning, and student success.">
+  <link rel="canonical" href="https://sarahjenkins-teacher.example.com/index.html">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sarahjenkins-teacher.example.com/index.html">
+  <meta property="og:title" content="Sarah Jenkins, M.Ed. | High School Mathematics & Physics Educator">
+  <meta property="og:description" content="Senior STEM Educator specializing in High School Mathematics, AP Physics, inquiry-based learning, and student success.">
+  <meta property="og:image" content="assets/images/og-image.svg">
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: {
+              800: '#1e293b',
+              900: '#0f172a',
+              950: '#020617'
+            },
+            royal: {
+              600: '#2563eb',
+              700: '#1d4ed8',
+              800: '#1e40af'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Structured Data JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Sarah Jenkins",
+    "honorificSuffix": "M.Ed.",
+    "jobTitle": "Senior High School Mathematics & Physics Educator",
+    "worksFor": {
+      "@type": "EducationalOrganization",
+      "name": "Oakridge High School"
+    },
+    "description": "Senior High School Mathematics and Physics Educator specializing in inquiry-based STEM learning.",
+    "url": "https://sarahjenkins-teacher.example.com/index.html",
+    "email": "mailto:sarah.jenkins.educator@example.com",
+    "telephone": "+1-206-555-0192"
+  }
+  </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased flex flex-col min-h-screen">
+
+  <!-- ACCESSIBILITY SKIP LINK -->
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-blue-900 text-white px-4 py-2 rounded-md z-50 shadow-lg">
+    Skip to main content
+  </a>
+
+  <!-- NAVIGATION HEADER -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-slate-200 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-20 items-center">
+        <!-- Logo / Teacher Name -->
+        <a href="index.html" class="flex items-center space-x-3 group focus:outline-none focus:ring-2 focus:ring-blue-800 rounded-lg p-1">
+          <div class="w-10 h-10 rounded-lg bg-blue-900 text-white flex items-center font-bold text-xl justify-center shadow-md group-hover:bg-blue-800 transition-colors">
+            SJ
+          </div>
+          <div>
+            <span class="block text-lg font-bold text-slate-900 leading-tight group-hover:text-blue-900 transition-colors" data-config="fullName">Sarah Jenkins, M.Ed.</span>
+            <span class="block text-xs font-medium text-slate-500" data-config="title">Senior STEM Educator</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex space-x-1 lg:space-x-2" aria-label="Main Navigation">
+          <a href="index.html" class="nav-link px-3 py-2 text-sm font-semibold text-blue-900 border-b-2 border-blue-900 focus:outline-none focus:ring-2 focus:ring-blue-800 rounded-t">Home</a>
+          <a href="about.html" class="nav-link px-3 py-2 text-sm font-semibold text-slate-600 hover:text-blue-900 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-800 rounded-t">About Me</a>
+          <a href="teaching.html" class="nav-link px-3 py-2 text-sm font-semibold text-slate-600 hover:text-blue-900 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-800 rounded-t">Teaching & Subjects</a>
+          <a href="resources.html" class="nav-link px-3 py-2 text-sm font-semibold text-slate-600 hover:text-blue-900 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-800 rounded-t">Resources</a>
+          <a href="achievements.html" class="nav-link px-3 py-2 text-sm font-semibold text-slate-600 hover:text-blue-900 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-800 rounded-t">Achievements</a>
+          <a href="contact.html" class="nav-link px-3 py-2 text-sm font-semibold text-slate-600 hover:text-blue-900 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-800 rounded-t">Contact</a>
+        </nav>
+
+        <!-- Header CTA -->
+        <div class="hidden lg:flex items-center">
+          <a href="contact.html" class="inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-semibold rounded-lg text-white bg-blue-900 hover:bg-blue-800 shadow-sm transition-all focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-800">
+            Get in Touch
+          </a>
+        </div>
+
+        <!-- Mobile Menu Toggle -->
+        <button type="button" id="mobile-menu-toggle" class="md:hidden p-2 rounded-lg text-slate-600 hover:text-slate-900 hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-blue-800" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle Navigation Menu">
+          <svg id="menu-icon-svg" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu" class="hidden md:hidden border-b border-slate-200 bg-white px-4 pt-2 pb-6 space-y-2">
+      <a href="index.html" class="block px-3 py-2.5 rounded-md text-base font-medium text-blue-900 bg-blue-50">Home</a>
+      <a href="about.html" class="block px-3 py-2.5 rounded-md text-base font-medium text-slate-700 hover:bg-slate-100">About Me</a>
+      <a href="teaching.html" class="block px-3 py-2.5 rounded-md text-base font-medium text-slate-700 hover:bg-slate-100">Teaching & Subjects</a>
+      <a href="resources.html" class="block px-3 py-2.5 rounded-md text-base font-medium text-slate-700 hover:bg-slate-100">Resources</a>
+      <a href="achievements.html" class="block px-3 py-2.5 rounded-md text-base font-medium text-slate-700 hover:bg-slate-100">Achievements</a>
+      <a href="contact.html" class="block px-3 py-2.5 rounded-md text-base font-medium text-slate-700 hover:bg-slate-100">Contact</a>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT AREA -->
+  <main id="main-content" class="flex-grow">
+
+    <!-- HERO SECTION -->
+    <section class="relative bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 text-white py-16 md:py-24 overflow-hidden">
+      <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#3b82f6_1px,transparent_1px)] [background-size:16px_16px]"></div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+
+          <!-- Hero Text Content -->
+          <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+            <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-blue-500/10 border border-blue-400/30 text-blue-300 text-xs font-semibold tracking-wide uppercase">
+              <span class="w-2 h-2 rounded-full bg-blue-400 animate-pulse"></span>
+              <span>Oakridge High School • Dept. of Mathematics & Physics</span>
+            </div>
+
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
+              Inspiring Curious Minds Through <span class="text-blue-400">Inquiry-Based STEM</span> Education
+            </h1>
+
+            <p class="text-lg sm:text-xl text-slate-300 max-w-2xl font-light leading-relaxed mx-auto lg:mx-0" data-config="tagline">
+              Empowering students through inquiry-based STEM learning, critical problem-solving, and academic excellence.
+            </p>
+
+            <!-- CTA Buttons -->
+            <div class="pt-2 flex flex-col sm:flex-row justify-center lg:justify-start items-center space-y-3 sm:space-y-0 sm:space-x-4">
+              <a href="teaching.html" class="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3.5 border border-transparent text-base font-semibold rounded-lg text-white bg-blue-600 hover:bg-blue-500 shadow-lg shadow-blue-600/30 transition-all focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                Explore Teaching Profile
+                <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+              </a>
+              <a href="contact.html" class="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3.5 border border-slate-600 text-base font-semibold rounded-lg text-slate-200 hover:bg-slate-800 hover:text-white transition-all focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-500">
+                Contact Me
+              </a>
+            </div>
+
+            <!-- Key Quick Info Pill Badges -->
+            <div class="pt-6 border-t border-slate-700/60 grid grid-cols-2 sm:grid-cols-4 gap-4 text-center lg:text-left">
+              <div>
+                <span class="block text-2xl font-bold text-white" data-config="stats.yearsExperience">10+</span>
+                <span class="text-xs text-slate-400 uppercase tracking-wider font-medium">Years Experience</span>
+              </div>
+              <div>
+                <span class="block text-2xl font-bold text-white" data-config="stats.studentsMentored">1,200+</span>
+                <span class="text-xs text-slate-400 uppercase tracking-wider font-medium">Students Taught</span>
+              </div>
+              <div>
+                <span class="block text-2xl font-bold text-white" data-config="stats.apPassRate">94%</span>
+                <span class="text-xs text-slate-400 uppercase tracking-wider font-medium">AP Exam Pass Rate</span>
+              </div>
+              <div>
+                <span class="block text-2xl font-bold text-white" data-config="stats.resourcesCreated">80+</span>
+                <span class="text-xs text-slate-400 uppercase tracking-wider font-medium">STEM Resources</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Teacher Portrait Image -->
+          <div class="lg:col-span-5 flex justify-center">
+            <div class="relative max-w-sm w-full">
+              <!-- Decorative Backdrop Accent -->
+              <div class="absolute -inset-1.5 bg-gradient-to-tr from-blue-600 to-indigo-500 rounded-2xl blur opacity-30"></div>
+
+              <div class="relative rounded-2xl bg-slate-800 border border-slate-700 p-2 overflow-hidden shadow-2xl">
+                <img src="assets/images/teacher-portrait.svg" alt="Portrait of Sarah Jenkins, M.Ed. - High School STEM Educator" class="w-full h-auto rounded-xl object-cover aspect-[4/5] bg-slate-700" data-config="assets.portrait">
+
+                <div class="p-4 bg-slate-900/90 backdrop-blur rounded-b-xl border-t border-slate-700/50 mt-1">
+                  <div class="flex items-center space-x-3">
+                    <div class="p-2 rounded-full bg-blue-500/20 text-blue-400">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    </div>
+                    <div>
+                      <p class="text-xs text-slate-400 font-medium uppercase tracking-wider">Credential Verified</p>
+                      <p class="text-sm font-semibold text-white">National Board Certified Educator</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- BRIEF BACKGROUND / ABOUT PREVIEW SECTION -->
+    <section class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+
+          <div class="lg:col-span-6 space-y-5">
+            <span class="text-blue-800 text-sm font-bold tracking-wider uppercase">Professional Background</span>
+            <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight">
+              Dedicated to Mathematical Rigor & Scientific Inquiry
+            </h2>
+            <p class="text-slate-600 leading-relaxed">
+              With over a decade of classroom teaching experience in public secondary schools, I specialize in bridging abstract mathematical theory with practical physical phenomena.
+            </p>
+            <p class="text-slate-600 leading-relaxed">
+              My instruction focuses on building deep conceptual understanding, resilient problem-solving strategies, and mathematical confidence in students of all background skill levels.
+            </p>
+            <div class="pt-2 flex items-center space-x-4">
+              <a href="about.html" class="inline-flex items-center text-blue-900 font-bold hover:text-blue-700 transition-colors">
+                Read Full Biography & Qualifications
+                <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div class="bg-slate-50 p-6 rounded-xl border border-slate-200 space-y-2">
+              <div class="w-10 h-10 rounded-lg bg-blue-100 text-blue-900 flex items-center justify-center font-bold">
+                01
+              </div>
+              <h3 class="font-bold text-slate-900 text-lg">Master of Education</h3>
+              <p class="text-xs text-slate-500">M.Ed. in Science & Secondary Education, University of Washington</p>
+            </div>
+
+            <div class="bg-slate-50 p-6 rounded-xl border border-slate-200 space-y-2">
+              <div class="w-10 h-10 rounded-lg bg-blue-100 text-blue-900 flex items-center justify-center font-bold">
+                02
+              </div>
+              <h3 class="font-bold text-slate-900 text-lg">B.S. Physics & Math</h3>
+              <p class="text-xs text-slate-500">Magna Cum Laude Honors graduate with secondary teaching credential</p>
+            </div>
+
+            <div class="bg-slate-50 p-6 rounded-xl border border-slate-200 space-y-2">
+              <div class="w-10 h-10 rounded-lg bg-blue-100 text-blue-900 flex items-center justify-center font-bold">
+                03
+              </div>
+              <h3 class="font-bold text-slate-900 text-lg">AP Certified Instructor</h3>
+              <p class="text-xs text-slate-500">Endorsed College Board instructor for AP Physics 1 and Calculus AB</p>
+            </div>
+
+            <div class="bg-slate-50 p-6 rounded-xl border border-slate-200 space-y-2">
+              <div class="w-10 h-10 rounded-lg bg-blue-100 text-blue-900 flex items-center justify-center font-bold">
+                04
+              </div>
+              <h3 class="font-bold text-slate-900 text-lg">STEM Department Lead</h3>
+              <p class="text-xs text-slate-500">Coordinates interdisciplinary curriculum alignment and teacher mentorship</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SUBJECTS & GRADE LEVELS HIGHLIGHT -->
+    <section class="py-16 bg-slate-100/70 border-y border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto space-y-3 mb-12">
+          <span class="text-blue-800 text-sm font-bold tracking-wider uppercase">Curriculum Overview</span>
+          <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight">Subjects & Grade Levels Taught</h2>
+          <p class="text-slate-600">
+            Structured courses engineered to challenge, encourage, and prepare high school students for higher education STEM pathways.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+          <div class="bg-white rounded-xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+            <div class="space-y-3">
+              <div class="inline-block px-2.5 py-1 rounded bg-blue-50 text-blue-900 text-xs font-bold uppercase">
+                Grades 9–11
+              </div>
+              <h3 class="text-xl font-bold text-slate-900">Algebra II & Honors Algebra</h3>
+              <p class="text-sm text-slate-600 leading-relaxed">
+                Polynomials, exponential functions, logarithmic scales, and trigonometric modeling with real-world problem sets.
+              </p>
+            </div>
+            <div class="pt-4 mt-4 border-t border-slate-100 text-xs font-semibold text-slate-500">
+              Core Subject • Oakridge HS
+            </div>
+          </div>
+
+          <div class="bg-white rounded-xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+            <div class="space-y-3">
+              <div class="inline-block px-2.5 py-1 rounded bg-blue-50 text-blue-900 text-xs font-bold uppercase">
+                Grades 11–12
+              </div>
+              <h3 class="text-xl font-bold text-slate-900">AP Physics 1 & Mechanics</h3>
+              <p class="text-sm text-slate-600 leading-relaxed">
+                Newtonian mechanics, rotational dynamics, work-energy principles, and simple harmonic motion with lab inquiry.
+              </p>
+            </div>
+            <div class="pt-4 mt-4 border-t border-slate-100 text-xs font-semibold text-slate-500">
+              Advanced Placement • College Credit
+            </div>
+          </div>
+
+          <div class="bg-white rounded-xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+            <div class="space-y-3">
+              <div class="inline-block px-2.5 py-1 rounded bg-blue-50 text-blue-900 text-xs font-bold uppercase">
+                Grades 11–12
+              </div>
+              <h3 class="text-xl font-bold text-slate-900">AP Calculus AB/BC</h3>
+              <p class="text-sm text-slate-600 leading-relaxed">
+                Limits, derivatives, definite integrals, and infinite series with rigorous analytical and graphical problem solving.
+              </p>
+            </div>
+            <div class="pt-4 mt-4 border-t border-slate-100 text-xs font-semibold text-slate-500">
+              Advanced Placement • College Credit
+            </div>
+          </div>
+
+          <div class="bg-white rounded-xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+            <div class="space-y-3">
+              <div class="inline-block px-2.5 py-1 rounded bg-blue-50 text-blue-900 text-xs font-bold uppercase">
+                Grade 12
+              </div>
+              <h3 class="text-xl font-bold text-slate-900">STEM Engineering Capstone</h3>
+              <p class="text-sm text-slate-600 leading-relaxed">
+                Project-based capstone course where senior students research, prototype, and present original engineering solutions.
+              </p>
+            </div>
+            <div class="pt-4 mt-4 border-t border-slate-100 text-xs font-semibold text-slate-500">
+              Senior Elective • Project-Based
+            </div>
+          </div>
+
+        </div>
+
+        <div class="mt-8 text-center">
+          <a href="teaching.html" class="inline-flex items-center text-sm font-bold text-blue-900 hover:text-blue-700">
+            View Teaching Methods & Weekly Schedule Example →
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- TEACHING PHILOSOPHY PREVIEW -->
+    <section class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-gradient-to-r from-blue-900 to-slate-900 rounded-2xl text-white p-8 md:p-12 shadow-xl relative overflow-hidden">
+          <div class="max-w-3xl space-y-4 relative z-10">
+            <span class="inline-block px-3 py-1 rounded bg-blue-800 text-blue-200 text-xs font-bold uppercase tracking-wider">
+              Educational Philosophy
+            </span>
+            <h2 class="text-2xl md:text-3xl font-extrabold tracking-tight">
+              "Mathematics and physics are tools for questioning, understanding, and shaping the world."
+            </h2>
+            <p class="text-slate-300 text-base md:text-lg leading-relaxed font-light" data-config="philosophySummary">
+              I believe mathematics and physics are not rigid lists of formulas to memorize, but powerful tools for questioning, understanding, and shaping the world around us. My classroom prioritizes active inquiry, psychological safety for mistake-driven growth, and differentiated support to build lasting confidence in every learner.
+            </p>
+            <div class="pt-4">
+              <a href="about.html#philosophy" class="inline-flex items-center px-5 py-2.5 rounded-lg bg-white text-blue-900 font-bold hover:bg-slate-100 transition-colors text-sm">
+                Read Classroom Management & Values
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED LEARNING RESOURCES SECTION -->
+    <section class="py-16 bg-slate-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-10">
+          <div>
+            <span class="text-blue-800 text-sm font-bold tracking-wider uppercase">Free Curriculum Downloads</span>
+            <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight">Featured Teaching & Study Resources</h2>
+          </div>
+          <a href="resources.html" class="mt-4 md:mt-0 text-sm font-bold text-blue-900 hover:text-blue-700 flex items-center">
+            Explore All Worksheets & Lesson Plans
+            <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+          <!-- Resource Card 1 -->
+          <div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+            <div class="p-6 space-y-3">
+              <div class="flex justify-between items-center text-xs font-semibold">
+                <span class="text-blue-800 bg-blue-50 px-2.5 py-1 rounded">Worksheet</span>
+                <span class="text-slate-500">PDF • 1.2 MB</span>
+              </div>
+              <h3 class="text-lg font-bold text-slate-900">Algebra II: Quadratic Functions Practice</h3>
+              <p class="text-xs text-slate-500 font-medium">Mathematics • Grades 9–10</p>
+              <p class="text-sm text-slate-600 leading-relaxed">
+                Comprehensive problem set covering factoring, vertex form conversion, and projectile motion word problems.
+              </p>
+            </div>
+            <div class="px-6 py-4 bg-slate-50 border-t border-slate-100 flex items-center justify-between">
+              <span class="text-xs text-slate-500">Verified PDF File</span>
+              <a href="assets/documents/algebra-worksheet.pdf" download class="inline-flex items-center text-xs font-bold text-blue-900 hover:text-blue-700">
+                <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+                Download PDF
+              </a>
+            </div>
+          </div>
+
+          <!-- Resource Card 2 -->
+          <div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+            <div class="p-6 space-y-3">
+              <div class="flex justify-between items-center text-xs font-semibold">
+                <span class="text-blue-800 bg-blue-50 px-2.5 py-1 rounded">Lesson Plan</span>
+                <span class="text-slate-500">PDF • 850 KB</span>
+              </div>
+              <h3 class="text-lg font-bold text-slate-900">AP Physics 1: Newton's Laws Guided Inquiry</h3>
+              <p class="text-xs text-slate-500 font-medium">Physics • Grades 11–12</p>
+              <p class="text-sm text-slate-600 leading-relaxed">
+                5E model lesson plan featuring lab investigation of friction, tension force vectors, and free-body analysis.
+              </p>
+            </div>
+            <div class="px-6 py-4 bg-slate-50 border-t border-slate-100 flex items-center justify-between">
+              <span class="text-xs text-slate-500">Verified PDF File</span>
+              <a href="assets/documents/physics-lesson-plan.pdf" download class="inline-flex items-center text-xs font-bold text-blue-900 hover:text-blue-700">
+                <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+                Download PDF
+              </a>
+            </div>
+          </div>
+
+          <!-- Resource Card 3 -->
+          <div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+            <div class="p-6 space-y-3">
+              <div class="flex justify-between items-center text-xs font-semibold">
+                <span class="text-blue-800 bg-blue-50 px-2.5 py-1 rounded">Study Guide</span>
+                <span class="text-slate-500">PDF • 2.4 MB</span>
+              </div>
+              <h3 class="text-lg font-bold text-slate-900">AP Chemistry & Chemical Bonding Guide</h3>
+              <p class="text-xs text-slate-500 font-medium">Chemistry & Physics • Grades 10–12</p>
+              <p class="text-sm text-slate-600 leading-relaxed">
+                Visual summary guide detailing molecular geometry, VSEPR theory, intermolecular forces, and lattice energy.
+              </p>
+            </div>
+            <div class="px-6 py-4 bg-slate-50 border-t border-slate-100 flex items-center justify-between">
+              <span class="text-xs text-slate-500">Verified PDF File</span>
+              <a href="assets/documents/chemistry-study-guide.pdf" download class="inline-flex items-center text-xs font-bold text-blue-900 hover:text-blue-700">
+                <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+                Download PDF
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CONTACT CALL TO ACTION -->
+    <section class="py-16 bg-white border-t border-slate-200">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
+        <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight">Interested in Collaborating or Scheduling a Meeting?</h2>
+        <p class="text-slate-600 max-w-2xl mx-auto leading-relaxed">
+          I welcome inquiries from school leadership, parents, and fellow educators. Feel free to contact me regarding curriculum consultations, office hours, or professional opportunities.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center items-center space-y-3 sm:space-y-0 sm:space-x-4 pt-2">
+          <a href="contact.html" class="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3.5 rounded-lg bg-blue-900 text-white font-bold hover:bg-blue-800 transition-colors shadow">
+            Contact Me Today
+          </a>
+          <a href="assets/documents/sample-cv.pdf" download class="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3.5 rounded-lg border border-slate-300 text-slate-700 font-bold hover:bg-slate-50 transition-colors" data-config="assets.cvDocument">
+            Download Curriculum Vitae (PDF)
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- BACK TO TOP BUTTON -->
+  <button id="back-to-top" type="button" class="fixed bottom-6 right-6 p-3 rounded-full bg-blue-900 text-white shadow-xl hover:bg-blue-800 transition-all hidden opacity-0 z-50 focus:outline-none focus:ring-2 focus:ring-blue-600" aria-label="Back to top of page">
+    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>
+  </button>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-900 text-slate-300 border-t border-slate-800 pt-12 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-12 border-b border-slate-800">
+
+        <!-- Brand & Title -->
+        <div class="space-y-3 md:col-span-1">
+          <span class="text-xl font-bold text-white block" data-config="fullName">Sarah Jenkins, M.Ed.</span>
+          <p class="text-xs text-slate-400 leading-relaxed" data-config="title">Senior High School Mathematics & Physics Educator</p>
+          <p class="text-xs text-slate-400" data-config="school">Oakridge High School • Seattle, WA</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <p class="text-xs font-bold text-white uppercase tracking-wider mb-4">Site Navigation</p>
+          <ul class="space-y-2 text-sm">
+            <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+            <li><a href="about.html" class="hover:text-white transition-colors">About Me</a></li>
+            <li><a href="teaching.html" class="hover:text-white transition-colors">Teaching & Subjects</a></li>
+            <li><a href="resources.html" class="hover:text-white transition-colors">Learning Resources</a></li>
+            <li><a href="achievements.html" class="hover:text-white transition-colors">Achievements</a></li>
+            <li><a href="contact.html" class="hover:text-white transition-colors">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Quick Info -->
+        <div>
+          <p class="text-xs font-bold text-white uppercase tracking-wider mb-4">Direct Contact</p>
+          <ul class="space-y-2 text-sm text-slate-400">
+            <li>Email: <a href="mailto:sarah.jenkins.educator@example.com" class="text-slate-300 hover:text-white underline" data-config="contact.email">sarah.jenkins.educator@example.com</a></li>
+            <li>Phone: <span data-config="contact.phone">+1 (206) 555-0192</span></li>
+            <li>Workplace: <span data-config="contact.workplace">Oakridge High School</span></li>
+          </ul>
+        </div>
+
+        <!-- Professional Links -->
+        <div>
+          <p class="text-xs font-bold text-white uppercase tracking-wider mb-4">Professional Connect</p>
+          <div class="flex space-x-3">
+            <a href="https://www.linkedin.com/in/example-teacher-profile" target="_blank" rel="noopener noreferrer" class="p-2 rounded-lg bg-slate-800 text-slate-300 hover:text-white hover:bg-slate-700 transition-colors" aria-label="LinkedIn Profile" data-config="social.linkedin">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.75a1.62 1.62 0 1 0 0 3.24 1.62 1.62 0 0 0 0-3.24z"/></svg>
+            </a>
+            <a href="https://twitter.com/example_edu" target="_blank" rel="noopener noreferrer" class="p-2 rounded-lg bg-slate-800 text-slate-300 hover:text-white hover:bg-slate-700 transition-colors" aria-label="Twitter Profile" data-config="social.twitter">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.05c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.58 8.58 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/></svg>
+            </a>
+          </div>
+          <p class="text-xs text-slate-500 mt-3">Personal portfolio website built with HTML5 & Tailwind CSS.</p>
+        </div>
+
+      </div>
+
+      <div class="pt-8 text-center text-xs text-slate-500">
+        <p>&copy; <span id="current-year">2025</span> <span data-config="fullName">Sarah Jenkins</span>. All Rights Reserved. Designed for Educational Professional Excellence.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CONFIG AND MAIN SCRIPT -->
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
